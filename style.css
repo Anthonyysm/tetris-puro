@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  padding: 16px;
+}
+
+.buttons-container {
+  margin-bottom: 16px;
+  width: 280px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.buttons-container button {
+  border: none;
+  background: blueviolet;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 7px;
+  height: 32px;
+
+  transition: filter .2s;
+  transition: transform .1s ease-in-out;
+}
+
+.buttons-container button:hover {
+  filter: brightness(0.9);
+  transform: scale(1.05);
+}
+
+.content-container {
+  display: flex;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  background: darkmagenta;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.mini-grid {
+  width: 120px;
+  height: 120px;
+  background: magenta;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mini-grid div {
+  width: 20px;
+  height: 20px;
+}
+
+.content-right h3 {
+  font-size: 32px;
+  margin-top: 24px;
+}
+
+.shapePainted{
+  background: yellow;
+  border: 1px solid black;
+}
