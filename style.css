@@ -15,6 +15,9 @@ button:disabled {
 }
 
 body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -32,7 +35,7 @@ body {
 
 .buttons-container button {
   border: none;
-  background: blueviolet;
+  background: darkmagenta;
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -55,7 +58,7 @@ body {
 .grid {
   width: 200px;
   height: 400px;
-  background: darkmagenta;
+  background: linear-gradient(to top, darkmagenta, rgb(70, 0, 70));
 
   display: flex;
   flex-wrap: wrap;
@@ -75,7 +78,7 @@ body {
 .mini-grid {
   width: 120px;
   height: 120px;
-  background: magenta;
+  background: darkorchid;
   display: flex;
   flex-wrap: wrap;
 }
@@ -90,7 +93,8 @@ body {
   margin-top: 24px;
 }
 
-.shapePainted{
-  background: yellow;
+.shapePainted {
+
+  background: linear-gradient(to right, orange, gold);
   border: 1px solid black;
 }
