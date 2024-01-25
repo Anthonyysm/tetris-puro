@@ -1,0 +1,12 @@
+{
+  "name": "tetris-puro",
+  "version": "1.0.0",
+  "description": "Projeto pratico com uso de JS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "tetris-puro"
+  },
+  "author": "Anthony dos Santos Martins",
+  "license": "MIT"
+}
