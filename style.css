@@ -78,7 +78,7 @@ body {
 .mini-grid {
   width: 120px;
   height: 120px;
-  background: darkorchid;
+  background: linear-gradient(to bottom, darkmagenta, rgb(70, 0, 70));
   display: flex;
   flex-wrap: wrap;
 }
@@ -94,7 +94,71 @@ body {
 }
 
 .shapePainted {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
 
-  background: linear-gradient(to right, orange, gold);
-  border: 1px solid black;
+.bronze-to-yellow {
+  background: linear-gradient(70deg, #cd7f32, yellow);
+}
+
+.green-to-neon {
+  background: linear-gradient(70deg, #1f564c, #ccff33);
+}
+
+.gold-to-orange {
+  background: linear-gradient(70deg, gold, orange);
+}
+
+.darkgray-to-white {
+  background: linear-gradient(70deg, #626262, white);
+}
+
+.blue-to-lightblue {
+  background: linear-gradient(70deg, blue, cyan);
+}
+
+.red-to-pink {
+  background: linear-gradient(70deg, red, pink);
+}
+
+.mobile-buttons-container {
+  margin-top: 20px;
+  max-width: 300px;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-rows: 64px 64px;
+}
+
+.mobile-buttons-container button {
+  background: linear-gradient(to bottom, magenta, rgb(156, 0, 156));
+  border: none;
+  border-radius: 5px;
+}
+
+.mobile-buttons-container button span {
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 990px) {
+  .mobile-buttons-container{
+    display: grid;
+  }
+}
+
+@media (max-width: 470px) {
+  .content-right {
+    margin-left: 16px;
+  }
+
+  .content-right h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .score {
+    display: block;
+  }
 }
