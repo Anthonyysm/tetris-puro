@@ -139,7 +139,7 @@ function moveRight() {
 
   undraw()
   currentPosition++
-  draw
+  draw()
 }
 
 function previousRotation() {
